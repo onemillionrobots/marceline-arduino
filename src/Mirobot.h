@@ -11,15 +11,18 @@
 #define SERIAL_BUFFER_LENGTH 180
 
 // The steppers have a gear ratio of 1:63.7 and have 32 steps per turn. 32 x 63.7 = 2038.4
-#define STEPS_PER_TURN    2038.0f
+//#define STEPS_PER_TURN    2038.0f // Mirobot-V2
+#define STEPS_PER_TURN    2048.0f   // Marceline
 
 #define CIRCUMFERENCE_MM_V1  251.3f
 #define WHEEL_DISTANCE_V1    126.0f
 #define PENUP_DELAY_V1 1200
 #define PENDOWN_DELAY_V1 2000
 
-#define CIRCUMFERENCE_MM_V2  256.0f
-#define WHEEL_DISTANCE_V2    120.0f
+//#define CIRCUMFERENCE_MM_V2  256.0f // Mirobot-V2
+#define CIRCUMFERENCE_MM_V2  253.3f   // Marceline
+//#define WHEEL_DISTANCE_V2    120.0f // Mirobot-V2
+#define WHEEL_DISTANCE_V2    125.6f   // Marceline
 #define PENUP_DELAY_V2 2000
 #define PENDOWN_DELAY_V2 1000
 
